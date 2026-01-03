@@ -1,6 +1,6 @@
 import { Auction } from "@/types/Auction";
 import { Table, TableProps } from "antd";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import columns from "./columns";
 import AppModal from "@/components/Modal";
 import CreateEditAuction from "./CreateEditAuction";
@@ -52,6 +52,8 @@ const ManageAuction: React.FC = () => {
   const handleEditClick = (auction: Auction) => {
     setSelectedAppraiser(auction);
   };
+
+  console.log("abc", selectedAppraiser)
 
   const getColumns = columns(handleEditClick);
 

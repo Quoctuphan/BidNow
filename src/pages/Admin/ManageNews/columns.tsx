@@ -1,13 +1,13 @@
-import { TableColumnType } from "antd";
+import type { ColumnsType } from 'antd/es/table';
 import { News } from "@/types/News";
 import AppModal from "@/components/Modal";
 import DeleteNews from "./DeleteNews";
 import { FaEdit } from "react-icons/fa";
 import { IoTrash } from "react-icons/io5";
-import CreateNews from "./CreateNews";
+// import CreateNews from "./CreateNews";
 import EditNews from "./EditNews";
 
-const columns:TableColumnType<News> = [
+const columns:ColumnsType<News> = [
         {
             title: "ID",
             dataIndex: "id",

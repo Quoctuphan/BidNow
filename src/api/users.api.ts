@@ -17,7 +17,7 @@ export const postUser = (
 ) => {
     return request({
         method: 'post',
-        url: '/users',
+        apiEndpoint: '/users',
         data,
         onSuccess: () => {
             queryClient.invalidateQueries({ queryKey: ['USERS'] });
@@ -41,7 +41,7 @@ export const postUser = (
 export const getUsers = () => {
     return request({
         method: 'get',
-        url: '/users',
+        apiEndpoint: '/users',
         onSuccess: handleSuccess,
         onError: handleError,
     });

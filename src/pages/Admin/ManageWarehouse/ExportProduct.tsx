@@ -1,5 +1,5 @@
 import { Warehouse } from "@/types/Warehouse";
-import { DatePicker, DatePickerProps } from "antd";
+import { DatePicker } from "antd";
 import { FC, useEffect, useState } from "react";
 
 interface ExportProductProps {
@@ -34,7 +34,7 @@ const ExportProduct: FC<ExportProductProps> = ( {exportProduct} ) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleDateChange = (date: DatePickerProps['value'], dateString: string | string[]) => {
+  const handleDateChange = ( dateString: string | string[]) => {
     const formattedDate = Array.isArray(dateString) ? dateString[0] : dateString;
     setFormData({ ...formData, exportDate: formattedDate });
   };

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const ForgetPass = () => {
   const [userName, setUsername] = useState<string>('');

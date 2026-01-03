@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 
 const dealsData = [
   {
@@ -27,7 +27,7 @@ const dealsData = [
   }
 ];
 
-const getStatusClass = (status) => {
+const getStatusClass = (status: any) => {
   switch (status) {
     case 'Delivered':
       return 'bg-green-100 text-green-500';

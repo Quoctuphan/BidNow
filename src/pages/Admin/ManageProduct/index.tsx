@@ -60,6 +60,8 @@ const ManageProduct: React.FC = () => {
     setSelectedAppraiser(product);
   };
 
+  console.log("abc", selectedAppraiser)
+
   const getColumns = columns(handleEditClick);
 
 

@@ -1,4 +1,4 @@
-import { DatePicker, DatePickerProps } from "antd";
+import { DatePicker } from "antd";
 import { useState } from "react";
 
 const ImportProduct = () => {
@@ -17,7 +17,7 @@ const ImportProduct = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleDateChange = (date: DatePickerProps['value'], dateString: string | string[]) => {
+  const handleDateChange = ( dateString: string | string[]) => {
     const formattedDate = Array.isArray(dateString) ? dateString[0] : dateString;
     setFormData({ ...formData, importDate: formattedDate });
   };

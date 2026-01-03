@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { Button, Col, Form, Input, InputNumber, message, Row, Select } from "antd";
+import { Button, Col, Form, Input, message, Row, Select } from "antd";
 import { Link, useNavigate } from "react-router-dom";
-import { number } from "yup";
-import Item from "antd/es/list/Item";
+// import { number } from "yup";
+// import Item from "antd/es/list/Item";
 import axios from "axios";
-import { error } from "console";
+// import { error } from "console";
 const { Option } = Select;
 
 // const formItemLayout = {

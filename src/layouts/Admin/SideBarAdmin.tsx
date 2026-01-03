@@ -10,11 +10,11 @@ import { ContainerOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { ConfigProvider, Menu } from 'antd';
 import { useEffect, useState } from 'react';
-import ManageProduct from '@/pages/Admin/ManageProduct';
-import PresidingAuction from '@/pages/Admin/PresidingAuction';
-import ManageAuction from '@/pages/Admin/ManageAuction';
-import ManageWarehouse from '@/pages/Admin/ManageWarehouse';
-import ManageNews from '@/pages/Admin/ManageNews';
+// import ManageProduct from '@/pages/Admin/ManageProduct';
+// import PresidingAuction from '@/pages/Admin/PresidingAuction';
+// import ManageAuction from '@/pages/Admin/ManageAuction';
+// import ManageWarehouse from '@/pages/Admin/ManageWarehouse';
+// import ManageNews from '@/pages/Admin/ManageNews';
 import Dashboard from '@/pages/Admin/Dashboad/Dashboard';
 
 type MenuItem = Required<MenuProps>['items'][number];

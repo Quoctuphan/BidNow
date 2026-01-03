@@ -57,6 +57,7 @@ const ManageAppraiser: React.FC = () => {
   const handleEditClick = (appraiser: Appraiser) => {
     setSelectedAppraiser(appraiser);
   };
+  console.log("abc", selectedAppraiser)
 
   const getColumns = columns(handleEditClick);
 

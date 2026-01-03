@@ -56,7 +56,7 @@ const exampleProducts: Warehouse[] = [
 const ManageWarehouse: React.FC = () => {
   // const [products, setProducts] = useState<Product[]>([]);
   const [selectedAppraiser, setSelectedAppraiser] = useState<Warehouse | null>(null);
-
+  console.log("abc", selectedAppraiser)
   const handleEditClick = (auction: Warehouse) => {
     setSelectedAppraiser(auction);
   };
