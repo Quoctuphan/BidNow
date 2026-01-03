@@ -4,9 +4,10 @@ import { Modal } from 'antd';
 import LoginForm from '@/layouts/Auth/Login';
 import 'tailwindcss/tailwind.css';
 import { Link } from 'react-router-dom';
+import logoImg from '@/assets/logo.png';
 
 const Header: React.FC = () => {
-  const logo = './src/assets/logo.png';
+  // const logo = './src/assets/logo.png';
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -26,7 +27,7 @@ const Header: React.FC = () => {
   return (
     <header className="flex justify-between items-center p-6 bg-red-800 text-white h-24">
       <Link to={'/'} className="flex items-center mr-4">
-        <img src={logo} alt="Logo" className="w-24" />
+        <img src={logoImg} alt="Logo" className="w-24" />
       </Link>
       <div className="block md:hidden" onClick={toggleMenu}>
         &#9776;
