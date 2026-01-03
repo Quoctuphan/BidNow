@@ -1,0 +1,22 @@
+/* Customize the dots with additional CSS if needed */
+.ant-carousel .slick-dots {
+    bottom: -2.5rem; /* Adjust the position of the dots */
+  }
+  
+  .ant-carousel .slick-dots li {
+    width: 16px; /* Width of the dots */
+    height: 16px; /* Height of the dots */
+  }
+  
+  .ant-carousel .slick-dots li button {
+      background-color: gray; /* Color of the active dot */
+      width: 4rem; /* Width of the active dot */
+      height: 0.2rem; /* Height of the active dot */
+  }
+    
+  .ant-carousel .slick-dots li.slick-active button {
+    background-color: #B41712; /* Color of the dots */
+    width: 4rem; /* Width of the active dot */
+    height: 0.2rem; /* Height of the active dot */
+  }
+  

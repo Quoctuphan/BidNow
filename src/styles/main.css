@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Merriweather Sans', sans-serif;
+  }
+}
+
+@layer components {
+  .main-gradient-color {
+    @apply bg-gradient-to-r from-purple-400  to-pink-600;
+  }
+}
