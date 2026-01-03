@@ -5,6 +5,7 @@ import DeleteNews from "./DeleteNews";
 import { FaEdit } from "react-icons/fa";
 import { IoTrash } from "react-icons/io5";
 import CreateNews from "./CreateNews";
+import EditNews from "./EditNews";
 
 const columns:TableColumnType<News> = [
         {
@@ -41,13 +42,13 @@ const columns:TableColumnType<News> = [
             render: () => 
                 <div className="flex flex-row justify-center space-x-5">
         <AppModal
-          width={1000}
+          width={800}
           onOk={() => { alert('function add and create Product') }}
           trigger={
             <button className="bg-[#3DBF00] p-2 rounded-[5px] text-white text-[18px] font-bold"><FaEdit /></button>
           }
         >
-          <CreateNews/>
+          <EditNews/>
         </AppModal>
         <AppModal
           onOk={() => { alert('function delete Product') }}

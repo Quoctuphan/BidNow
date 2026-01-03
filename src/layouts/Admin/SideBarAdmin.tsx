@@ -22,7 +22,7 @@ const items: MenuItem[] = [
   {key: '10', label: 'Dashboard'},
   { key: '1', icon: <PiUserListThin />, label: 'Manager List User', },
   { key: '2', icon: <TbCategoryPlus />, label: 'Manager Category', },
-  { key: '3', icon: <ContainerOutlined />, label: 'Manager New ', },
+  { key: '3', icon: <ContainerOutlined />, label: 'Manager News ', },
   { key: '4', icon: <LiaWarehouseSolid />, label: 'Manager Warehouse', },
   { key: '5', icon: <RiAuctionLine />, label: 'Manager Auction', },
   { key: '6', icon: <AiOutlineProduct />, label: 'Manager Product', },

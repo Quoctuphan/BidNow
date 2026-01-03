@@ -6,7 +6,7 @@ const LoginForm = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <Form className="flex flex-col mt-10 space-y-5 p-4 md:p-6 lg:p-8 shadow-md rounded-md bg-gray-50">
+      <Form className="flex flex-col mt-10 space-y-5 p-4 md:p-6 lg:p-8  rounded-md bg-gray-50">
         <div className="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-3">
           <div className="bg-[#B7201B] w-[80px] h-[80px] md:w-[100px] md:h-[100px] lg:w-[120px] lg:h-[120px] flex justify-center items-center">
             <img src={logo} alt="Logo" className="w-5/6" />
@@ -40,7 +40,7 @@ const LoginForm = () => {
           <input
             type="text"
             placeholder="Username/Email"
-            className="border-2 w-full h-[30px] md:h-[35px] lg:h-[40px] rounded-[5px]"
+            className="border-2 w-full h-[30px] md:h-[35px] lg:h-[40px] rounded-[5px] p-2"
           />
         </div>
         <div className="flex flex-col justify-center space-y-1">
@@ -50,7 +50,7 @@ const LoginForm = () => {
           <input
             type="password"
             placeholder="Password"
-            className="border-2 w-full h-[30px] md:h-[35px] lg:h-[40px] rounded-[5px]"
+            className="border-2 w-full h-[30px] md:h-[35px] lg:h-[40px] rounded-[5px] p-2"
           />
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center">
