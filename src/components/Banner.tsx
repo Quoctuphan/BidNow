@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
+import bannerImage from "@/assets/images/banner.png"
+import contactImage from "@/assets/images/contact.png"
 
 function Banner() {
-  const banner = '../src/assets/images/banner.png';
-  const contact = '../src/assets/images/contact.png';
   return (
     <div className="mx-14">
       <div className="relative ">
-        <img src={banner} alt="Banner" />
+        <img src={bannerImage} alt="Banner" />
         <div className="absolute right-0 bottom-0">
-          <Link to={""}><img src={contact} alt="" /></Link>
+          <Link to={""}><img src={contactImage} alt="" /></Link>
         </div>
       </div>
     </div>
