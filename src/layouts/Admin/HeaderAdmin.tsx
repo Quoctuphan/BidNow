@@ -6,17 +6,19 @@ import NotificationMenu from "@/components/NotificationMenu/NotificationMenu";
 import NotificationItem from "@/components/NotificationMenu/NotificationItem/NotificationItem";
 import FormPersonalInfomation from "@/pages/Admin/PersonalInfor/PersonalInfor";
 import { useNavigate} from "react-router-dom";
+import logoHome from "@/assets/images/logohome.png"
+
+import noticationIcon from "@/assets/images/noticationIcon.png"
+
+import flagIcon from "@/assets/images/flagIcon.png"
+
+import avatarImg from "@/assets/images/avatarImg.png"
+
+
 const HeaderAdmin = () => {
   const [isShow, setShow] = useState(false);
   const [isShowInfo, setShowInfo] = useState(false);
   const navigate = useNavigate();
-  // icon
-  const logoHome = './src/assets/images/logohome.png'
-  const noticationIcon = "./src/assets/images/noticationIcon.png"
-  const flagIcon = "./src/assets/images/flagIcon.png"
-  const avatarImg = "./src/assets/images/avatarImg.png"
-  //
-
   const handlShowNotication = () => {
     if (!isShow) {
       setShow(true);

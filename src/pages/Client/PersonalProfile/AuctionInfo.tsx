@@ -1,9 +1,8 @@
 import { useState } from "react";
 import AuctionRegisteredItem from "@/components/AuctionRegisteredItem";
-
+import auctionImg from "@/assets/images/auctionItem.png"
 const AuctionInfo = () => {
   const [tab, setTab] = useState(1);
-  const auctionImg = './src/assets/images/auctionItem.png';
   const exRegisteredData = [
     {
       id: 1,

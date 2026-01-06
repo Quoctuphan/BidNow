@@ -1,12 +1,11 @@
 import { Select } from "antd";
 import RegisteredProductItem from "@/components/RegisteredProductItem";
-
+import auctionImg from "@/assets/images/watch.png"
 const handleChange = (value: string) => {
   console.log(`selected ${value}`);
 };
 
 const RegisteredProduct = () => {
-  const auctionImg = "./src/assets/images/watch.png";
   const exampleData = [
     {
       id: 1,

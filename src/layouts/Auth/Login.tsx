@@ -1,8 +1,7 @@
 import { Form } from "antd";
 import { useNavigate } from "react-router-dom";
-
+import logo from "@/assets/logo.png"
 const LoginForm = () => {
-  const logo = './src/assets/logo.png';
   const navigate = useNavigate();
   return (
     <div>

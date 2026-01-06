@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 // import { number } from "yup";
 // import Item from "antd/es/list/Item";
 import axios from "axios";
+import logoRegister from "@/assets/images/logoRegister.png"
+import closerIcon from "@/assets/images/closerIcon.png"
 // import { error } from "console";
 const { Option } = Select;
 
@@ -32,8 +34,6 @@ const tailFormItemLayout = {
     },
   },
 };
-const logoRegister = './src/assets/images/logoRegister.png'
-const closerIcon = './src/assets/images/closerIcon.png'
 
 function Register() {
   const [form] = Form.useForm();

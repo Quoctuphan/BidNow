@@ -4,9 +4,9 @@ import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 import { MdOutlineLocalShipping } from "react-icons/md";
 import { RiFireFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import flower from "@/assets/images/flower.png"
 
 function ProductDetail() {
-    const flower = "./../src/assets/images/flower.png";
     return (
         <div>
             <div className="flex items-center m-5">

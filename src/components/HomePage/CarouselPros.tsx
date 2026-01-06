@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Carousel, ConfigProvider } from 'antd';
-const coinImage = "./../src/assets/images/coin.png"
+import coinImage from "@/assets/images/coin.png"
 
 // Define styles for the content of the carousel
 const contentStyle: React.CSSProperties = {

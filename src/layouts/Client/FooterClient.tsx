@@ -3,9 +3,8 @@ import { IoIosSend, IoMdMail } from "react-icons/io";
 import { FaFacebook, FaLocationDot, FaPhoneVolume, FaYoutube, } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logo from "@/assets/images/logo.jpg"
 function Footer() {
-    const logo = './src/assets/images/logo.jpg'
-
     return (
         <div>
             <footer className="bg-black dark:bg-gray-900">

@@ -2,7 +2,8 @@ import { ImHammer2 } from "react-icons/im";
 import AuctionItem from "./AuctionItem";
 import { PiArrowRightFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
-const auctionImg = './src/assets/images/auctionItem.png';
+import auctionImg from  "@/assets/images/auctionItem.png"
+
 
 function UpcomingAuctions() {
   const examAuctionData = [

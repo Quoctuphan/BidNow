@@ -1,7 +1,8 @@
 import { AutoComplete, ConfigProvider, Input } from "antd";
+import imgProduct from "@/assets/images/product1.jpg"
 
 function DetailAuctionOnline() {
-  const imgProduct = './src/assets/images/product1.jpg'
+
   const theme = {
     token: {
       colorPrimary: '#b41712'

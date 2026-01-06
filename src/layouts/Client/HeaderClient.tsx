@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import logoImg from '@/assets/logo.png';
 
 const Header: React.FC = () => {
-  // const logo = './src/assets/logo.png';
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
