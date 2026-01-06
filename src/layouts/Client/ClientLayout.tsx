@@ -2,16 +2,30 @@ import Home from "@/pages/Client/Home";
 import Footer from "./FooterClient";
 import Header from "./HeaderClient";
 import UserNavbar from "@/components/Navbar";
+import { Link } from "react-router-dom";
+import contactImage from "@/assets/images/contact.png"
 
 function ClientLayout() {
+    const handleAlert = () => (
+          alert("Chức năng này chưa phát triển")
+    )
+
     return (
-        <div>
-            <Header />
-            <div className="my-4">
-                <UserNavbar />
+        <div className="relative">
+            <div>
+                <div className=" fixed top-0 right-0 w-full z-10">
+                    <Header />
+                </div>
+                <div className="my-4 mt-24 ">
+                    <UserNavbar />
+                    <Home />
+                </div>
+              
+                <Footer />
             </div>
-            <Home />
-            <Footer />
+            <div className="fixed right-6 bottom-6">
+                <Link to={""} onClick={handleAlert}><img src={contactImage} alt="" /></Link>
+            </div>
         </div>
     )
 }

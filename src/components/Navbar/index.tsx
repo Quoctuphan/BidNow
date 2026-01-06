@@ -5,7 +5,7 @@ const UserNavbar = () => {
   const [isHovered, setIsHovered] = useState(0);
 
   return (
-    <nav className="flex sm:flex-row flex-col justify-between space-x-2 md:space-x-5 mx-4 md:mx-[150px]">
+    <nav className="flex sm:flex-row flex-col py-2 justify-between space-x-2 md:space-x-5 mx-4 md:mx-[150px]">
       <div className="group inline-block">
         <button
           className="flex flex-row justify-center items-center space-x-2 md:space-x-3 cursor-pointer"
