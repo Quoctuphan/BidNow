@@ -4,6 +4,8 @@ import SuccessAuctionedProducts from "@/components/SuccessAuctionedProducts";
 import AuctionedProducts from "@/components/HomePage/AuctionedProducts";
 import CurrentAuctionPro from "@/components/HomePage/CurrentAuctionPro";
 import request from "@/utils/request";
+import UserNavbar from "@/components/Navbar";
+
 
 const Home = () => {
   const fetchAuction = async () => {
@@ -23,6 +25,7 @@ const Home = () => {
 
   return (
     <div>
+      <UserNavbar />
       <Banner />
       <div className="m-12">
         <AuctionedProducts />
@@ -39,6 +42,8 @@ const Home = () => {
       <div className="mt-4">
         <SuccessAuctionedProducts />
       </div>
+
+  
     </div>
   )
 }

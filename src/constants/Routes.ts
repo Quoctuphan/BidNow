@@ -26,5 +26,7 @@ export const PROFILE_PATH = 'profile';
 export const SIGNUP_PATH = 'signup';
 export const SIGNIN_PATH = 'signin';
 export const INTRODUCTION = 'introduction';
+export const ART_PANTING = 'paintings'
+export const SEARCH = 'search'
 export const NEWS = 'news';
 export const CONTACT = 'contact';

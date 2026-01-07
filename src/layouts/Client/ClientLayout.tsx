@@ -1,8 +1,7 @@
-import Home from "@/pages/Client/Home";
+
 import Footer from "./FooterClient";
 import Header from "./HeaderClient";
-import UserNavbar from "@/components/Navbar";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import contactImage from "@/assets/images/contact.png"
 
 function ClientLayout() {
@@ -17,8 +16,9 @@ function ClientLayout() {
                     <Header />
                 </div>
                 <div className="my-4 mt-24 ">
-                    <UserNavbar />
-                    <Home />
+                 
+                    {/* <Home /> */}
+                <Outlet />
                 </div>
               
                 <Footer />

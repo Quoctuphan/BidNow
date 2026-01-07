@@ -6,6 +6,7 @@ import 'tailwindcss/tailwind.css';
 import { Link } from 'react-router-dom';
 import logoImg from '@/assets/logo.png';
 
+
 const Header: React.FC = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,9 +50,9 @@ const Header: React.FC = () => {
         </ul>
       </nav>
       <div className="flex gap-6">
-        <div className="flex items-center gap-2">
+        <Link to={"/search"} className="flex items-center gap-2">
           <FaSearch />
-        </div>
+        </Link>
         <div className="flex items-center gap-2">
           <FaShoppingCart />
           <span className="ml-2">Orders</span>
