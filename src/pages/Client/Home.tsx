@@ -1,3 +1,4 @@
+import React from "react";
 import UpcomingAuctions from "@/components/UpcomingAuctions";
 import Banner from "../../components/Banner";
 import SuccessAuctionedProducts from "@/components/SuccessAuctionedProducts";
@@ -48,6 +49,6 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default React.memo(Home);
 
 
