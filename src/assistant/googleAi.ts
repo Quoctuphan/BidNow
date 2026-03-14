@@ -1,9 +1,14 @@
 import {GoogleGenAI} from "@google/genai";
 
-const googleAI = 
-       new GoogleGenAI({
-            apiKey:  process.env.GOOGLE_API_KEY! || import.meta.env.VITE_GOOGLE_API_KEY,
-        });
+let googleAI: GoogleGenAI;
+try {
+    googleAI = new GoogleGenAI({
+        apiKey: import.meta.env.VITE_GOOGLE_API_KEY,
+ 
+    });
+} catch (error) {
+    console.error("Failed to initialize GoogleGenAI:", error);
+}
     
 
 export class Assistant {
