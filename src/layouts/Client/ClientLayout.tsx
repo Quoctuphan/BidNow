@@ -3,7 +3,7 @@ import Footer from "./FooterClient";
 import Header from "./HeaderClient";
 import { Link, Outlet } from "react-router-dom";
 import contactImage from "@/assets/images/contact.png"
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import ChatAI from "@/components/ChatAI";
 import { Assistant } from "@/assistant/googleAi";
 type Message = {
