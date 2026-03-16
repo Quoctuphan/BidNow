@@ -3,7 +3,8 @@ import { IoIosSend, IoMdMail } from "react-icons/io";
 import { FaFacebook, FaLocationDot, FaPhoneVolume, FaYoutube, } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "@/assets/images/logo.jpg"
+// import logo from "@/assets/images/logo.jpg"
+import logoImg from '@/assets/logo.png';
 function Footer() {
     return (
         <div>
@@ -81,8 +82,8 @@ function Footer() {
                         </div>
                     </div>
                     <div className="px-4 py-6 bg-black dark:bg-gray-700 md:flex md:items-center md:justify-between">
-                        <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
-                            <img src={logo} alt="" />
+                        <span className="max-w-[200px] w-fit bg-mainBgColor">
+                            <img className="w-full h-full object-cover" src={logoImg} alt="logo" />
                         </span>
                         <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse" style={{ width: 293, height: 40 }}>
                             <div className="relative mt-2 shadow-sm">

@@ -2,8 +2,8 @@ import React from "react";
 import UpcomingAuctions from "@/components/UpcomingAuctions";
 import Banner from "../../components/Banner";
 import SuccessAuctionedProducts from "@/components/SuccessAuctionedProducts";
-import AuctionedProducts from "@/components/HomePage/AuctionedProducts";
-import CurrentAuctionPro from "@/components/HomePage/CurrentAuctionPro";
+import LiveAuctions from "@/components/HomePage/LiveAuctions";
+// import CurrentAuctionPro from "@/components/HomePage/CurrentAuctionPro";
 import request from "@/utils/request";
 import UserNavbar from "@/components/Navbar";
 
@@ -29,16 +29,16 @@ const Home = () => {
       <UserNavbar />
       <Banner />
       <div className="m-12">
-        <AuctionedProducts />
+        <LiveAuctions />
       </div>
 
       <div className="m-4">
         <UpcomingAuctions />
       </div>
 
-      <div className="m-12">
+      {/* <div className="m-12">
         <CurrentAuctionPro />
-      </div>
+      </div> */}
 
       <div className="mt-4">
         <SuccessAuctionedProducts />

@@ -10,7 +10,8 @@ const examAuctionData = [
         endTime: "07-12 5:00 PM",
         startPrice: '1.10',
         finalPrice: '100.000',
-        imgSrc: auctionImg
+        imgSrc: auctionImg,
+        type: "Auction Ended"
     },
     {
         id: 2,
@@ -19,7 +20,8 @@ const examAuctionData = [
         endTime: "07-17 4:00 PM",
         startPrice: '1.10',
         finalPrice: '100.000',
-        imgSrc: auctionImg
+        imgSrc: auctionImg,
+        type: "Auction Ended"
     },
     {
         id: 3,
@@ -28,7 +30,8 @@ const examAuctionData = [
         endTime: "07-22 6:00 PM",
         startPrice: '1.10',
         finalPrice: '100.000',
-        imgSrc: auctionImg
+        imgSrc: auctionImg,
+        type: "Auction Ended"
     },
     {
         id: 4,
@@ -37,37 +40,62 @@ const examAuctionData = [
         endTime: "07-27 7:00 PM",
         startPrice: '1.10',
         finalPrice: '100.000',
-        imgSrc: auctionImg
+        imgSrc: auctionImg,
+        type: "Auction Ended"
     }
 ]
 function SuccessAuctionedProducts() {
     return (
-        <div className="mx-20 bg-gray-100">
-            <center>
-                <p className="text-mainBgColor font-bold text-[36px]">Successfully auctioned products</p>
-                <div className="flex justify-center gap-5 m-2">
-                    <hr className='bg-gray-600 w-32 h-1 rounded-sm mt-3' />
-                    <ImHammer2 size={32} className="text-mainBgColor" />
-                    <hr className='bg-gray-600 w-32 h-1 rounded-sm mt-3' />
+        <div className="mx-20 px-4 sm:px-6 lg:px-8 py-12 bg-gray-50">
+            <div className="text-center mb-12">
+                <h2 className="text-3xl font-semibold tracking-tight text-[#B41712] sm:text-4xl">Successfully Auctioned</h2>
+                <div className="mt-4 flex justify-center items-center gap-4">
+                    <hr className='w-24 border-t-2 border-gray-200' />
+                    <ImHammer2 size={24} className="text-[#B41712]" />
+                    <hr className='w-24 border-t-2 border-gray-200' />
                 </div>
-            </center>
-            <div className="grid grid-cols-3 gap-4 items-center justify-center">
-                {examAuctionData.slice(0, 3).map((auction) => (
-                    <div key={auction.id} className="flex flex-col items-center relative">
-                        <img src={auction.imgSrc} alt={auction.auctionName} className="rounded-3xl w-full mb-14" />
-                        <div className="w-10/12 p-3 rounded-lg bg-white absolute bottom-4 shadow-md">
-                            <p className="text-xl">{auction.auctionName}</p>
-                            <p className="text-sm">End Time: {auction.endTime}</p>
-                            <p className="text-sm">Starting Price: {auction.startPrice}USD</p>
-                            <p className="text-sm">Final Price: {auction.finalPrice}USD</p>
-                        </div>
-                    </div>
-                ))}
             </div>
-            <Link to={""} className="flex items-center justify-center m-3">
-                <p className="text-mainBgColor font-bold text-[24px]">View All</p>
-                <PiArrowRightFill className="text-mainBgColor size-8" />
-            </Link >
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {examAuctionData.slice(0, 3).map((auction) => (
+    <div key={auction.id} className="group relative overflow-hidden rounded-2xl shadow-lg h-96">
+        {/* Hình ảnh */}
+        <img src={auction.imgSrc} alt={auction.auctionName} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                 */}
+        {/* Badge trạng thái */}
+        <div className="absolute top-4 right-4 bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+            {auction.type}  
+        </div>
+
+        <div className="absolute bottom-0 left-0 right-0 p-4">
+            <div className="rounded-xl border border-white/20 bg-white/10 p-4 backdrop-blur-md text-white">
+                <h3 className="text-xl font-bold transition-colors duration-300 group-hover:text-red-400">
+                    {auction.auctionName}
+                </h3>
+                <p className="text-xs text-gray-200 mt-1">Ended: {auction.endTime}</p>
+                
+                <div className="mt-3 border-t border-white/20 pt-3 flex justify-between items-end">
+                    <div>
+                        <p className="text-xs text-gray-300">Start price</p>
+                        <p className="font-medium text-bg">${auction.startPrice}</p>
+                    </div>
+                    <div className="text-right">
+                        <p className="text-xs text-gray-300">Winning Bid</p>
+                        <p className="text-xl font-bold text-green-400">${auction.finalPrice}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+))}
+            </div>
+            <div className="mt-12 text-center">
+                <Link to={""} className="inline-flex items-center gap-2 text-lg font-bold text-[#B41712] group">
+                    <span>View All</span>
+                    <PiArrowRightFill className="transition-transform group-hover:translate-x-1" />
+                </Link >
+            </div>
         </div>
     )
 }

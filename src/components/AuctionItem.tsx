@@ -6,9 +6,11 @@ interface AuctionItemType {
   startTime: string | number;
   endTime: string | number;
   imgSrc: string;
+  typeItem: string;
+  startbid: number;
 }
 
-const AuctionItem: React.FC<AuctionItemType> = ({ auctionName, startTime, endTime, imgSrc }) => {
+const AuctionItem: React.FC<AuctionItemType> = ({ auctionName, startTime, endTime, imgSrc, typeItem, startbid }) => {
   return (
     <div className="bg-white rounded-xl shadow-md flex">
       <div>
@@ -16,8 +18,9 @@ const AuctionItem: React.FC<AuctionItemType> = ({ auctionName, startTime, endTim
       </div>
       <div className='inline p-3'>
         <p className="text-xl md:text-md sm:text-sm font-semibold mb-2 text-mainBgColor">{auctionName}</p>
-        <p className="text-gray-600 md:text-sm sm:text-xs">Start Time: <b>{startTime}</b></p>
-        <p className="text-gray-600 md:text-sm sm:text-xs">End Time: <b>{endTime}</b></p>
+        <p className="text-gray-600 md:text-sm sm:text-xs">Start time: <b>{startTime}</b></p>
+        <p className="text-gray-600 md:text-sm sm:tex -xs">End time: <b>{endTime}</b></p>
+        <p className="text-gray-600 md:text-sm sm:text-xs">Start bid: <b>{startbid.toLocaleString()} USD</b></p>
         <Button className="bg-mainBgColor hover:bg-mainBgHoverColor text-white mt-4">Register</Button>
       </div>
     </div>

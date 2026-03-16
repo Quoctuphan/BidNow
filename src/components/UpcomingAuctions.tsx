@@ -2,7 +2,7 @@ import { ImHammer2 } from "react-icons/im";
 import AuctionItem from "./AuctionItem";
 import { PiArrowRightFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
-import auctionImg from  "@/assets/images/auctionItem.png"
+import { productImage, coinImage, coatImage, coat01 } from "@/assets/images";
 
 
 function UpcomingAuctions() {
@@ -12,56 +12,72 @@ function UpcomingAuctions() {
       auctionName: "Vintage Car Auction",
       startTime: "07-10 10:00 AM",
       endTime: "07-12 5:00 PM",
-      imgSrc: auctionImg
+      imgSrc: productImage,
+      type: "Coming Soon",
+      startbid: 1000,
     },
     {
       id: 2,
       auctionName: "Rare Book Auction",
       startTime: "07-15 9:00 AM",
       endTime: "07-17 4:00 PM",
-      imgSrc: auctionImg
+      imgSrc: coinImage,
+      type: "Coming Soon",
+      startbid: 1000,
     },
     {
       id: 3,
       auctionName: "Antique Furniture Auction",
       startTime: "07-20 11:00 AM",
       endTime: "07-22 6:00 PM",
-      imgSrc: auctionImg
+      imgSrc: coatImage,
+      type: "Coming Soon",
+      startbid: 1000,
     },
     {
       id: 4,
       auctionName: "Art Collection Auction",
       startTime: "07-25 12:00 PM",
       endTime: "07-27 7:00 PM",
-      imgSrc: auctionImg
+      imgSrc: coat01,
+      type: "Coming Soon",
+      startbid: 1000,
     },
     {
       id: 5,
       auctionName: "Jewelry Auction",
       startTime: "07-30 1:00 PM",
       endTime: "08-01 8:00 PM",
-      imgSrc: auctionImg
+      imgSrc: productImage,
+      type: "Coming Soon",
+      startbid: 1000,
     },
     {
       id: 6,
       auctionName: "Jewelry Auction",
       startTime: "07-30 1:00 PM",
       endTime: "08-01 8:00 PM",
-      imgSrc: auctionImg
+      imgSrc: coat01,
+      type: "Coming Soon",
+      startbid: 1000,
     },
     {
       id: 7,
       auctionName: "Jewelry Auction",
       startTime: "07-30 1:00 PM",
       endTime: "08-01 8:00 PM",
-      imgSrc: auctionImg
+      imgSrc: coinImage,
+      type: "Coming Soon",
+      startbid: 1000,
     },
     {
       id: 8,
       auctionName: "Jewelry Auction",
       startTime: "07-30 1:00 PM",
       endTime: "08-01 8:00 PM",
-      imgSrc: auctionImg
+      imgSrc: coatImage,
+      type: "Coming Soon",
+      startbid: 1000,
     }
   ];
 
@@ -69,7 +85,7 @@ function UpcomingAuctions() {
   return (
     <div className="mx-20">
       <center>
-        <p className="text-mainBgColor font-bold text-[36px]">Upcoming auctions</p>
+        <p className="text-mainBgColor font-semibold text-[36px]">Upcoming Auctions</p>
         <div className="flex justify-center gap-5 m-2">
           <hr className='bg-gray-600 w-32 h-1 rounded-sm mt-3' />
           <ImHammer2 size={32} className="text-mainBgColor" />
@@ -84,13 +100,17 @@ function UpcomingAuctions() {
             startTime={auction.startTime}
             endTime={auction.endTime}
             imgSrc={auction.imgSrc}
+            typeItem={auction.type}
+            startbid={auction.startbid}
           />
         ))}
       </div>
-      <Link to={""} className="flex items-center justify-center m-3">
-        <p className="text-mainBgColor font-bold text-[24px]">View All</p>
-        <PiArrowRightFill className="text-mainBgColor size-8" />
-      </Link>
+     <div className="mt-12 text-center">
+                <Link to={""} className="inline-flex items-center gap-2 text-lg font-bold text-[#B41712] group">
+                    <span>View All</span>
+                    <PiArrowRightFill className="transition-transform group-hover:translate-x-1" />
+                </Link >
+      </div>
     </div>
   )
 }

@@ -4,8 +4,7 @@ let googleAI: GoogleGenAI;
 try {
     googleAI = new GoogleGenAI({
         apiKey: import.meta.env.VITE_GOOGLE_API_KEY,
- 
-    });
+    }); 
 } catch (error) {
     console.error("Failed to initialize GoogleGenAI:", error);
 }

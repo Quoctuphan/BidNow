@@ -16,42 +16,7 @@ function ClientLayout() {
     const [messages, setMessages] = useState< Message[]>([]);
     const [input, setInput] = useState<string>('');
     const [isLoading, setIsLoading] = useState<boolean>(false);
-        // const messages: Message[] = [
-    //     {
-    //         role: 'user',
-    //         content: 'Xin chào'
-    //     },
-    //     {
-    //         role: 'assistant',
-    //         content: 'Chào bạn! Tôi có thể giúp gì cho bạn?'
-    //     },
-    //     {
-    //         role: 'user',
-    //         content: 'Tôi muốn đặt hàng'
-    //     },
-    //     {
-    //         role: 'assistant',
-    //         content: 'Chúng tôi có thể giúp bạn với việc đặt hàng không?'
-    //     },
-    //     {
-    //         role: 'user',
-    //         content: 'Tôi muốn biết giá trị của sản phẩm'
-    //     },
-    //     {
-    //         role: 'assistant',
-    //         content: 'Chúng tôi có thể giúp bạn với việc biết giá trị của sản phẩm không?'
-    //     }
-    // ];
 
-    // const googleAI: GoogleGenAI = new GoogleGenAI({
-    //     apiKey: import.meta.env.VITE_GOOGLE_API_KEY,
-
-    // });
-    // const googleAI = useMemo(() => {
-    //     return new GoogleGenAI({
-    //         apiKey: import.meta.env.VITE_GOOGLE_API_KEY,
-    //     });
-    //     }, []);
     const assistant = new Assistant();
     const addMessage = (message : Message) => {
         setMessages((prev) => [...prev, message])
