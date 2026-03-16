@@ -10,7 +10,8 @@ interface AuctionItemType {
   startbid: number;
 }
 
-const AuctionItem: React.FC<AuctionItemType> = ({ auctionName, startTime, endTime, imgSrc, typeItem, startbid }) => {
+const AuctionItem: React.FC<AuctionItemType> = ({ auctionName, startTime, endTime, imgSrc, startbid }) => {
+
   return (
     <div className="bg-white rounded-xl shadow-md flex">
       <div>
