@@ -2,6 +2,8 @@ import ProductDetail from "@/components/ProductDetail";
 import SliderAuction from "./SliderAuction";
 import { Button } from "antd";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+
 const auctionData = [
     {
         image: 'https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
@@ -35,6 +37,9 @@ const auctionData = [
     }
 ];
 function SecretAuction(){
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return(
         <div>
             <ProductDetail/>

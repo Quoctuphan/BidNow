@@ -82,9 +82,9 @@ function Footer() {
                         </div>
                     </div>
                     <div className="px-4 py-6 bg-black dark:bg-gray-700 md:flex md:items-center md:justify-between">
-                        <span className="max-w-[200px] w-fit bg-mainBgColor">
+                        <div className="max-w-[200px] h-30 lg:h-40 bg-mainBgColor">
                             <img className="w-full h-full object-cover" src={logoImg} alt="logo" />
-                        </span>
+                        </div>
                         <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse" style={{ width: 293, height: 40 }}>
                             <div className="relative mt-2 shadow-sm">
                                 <Input type="text" className="rounded-none w-full border-0 py-2 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6" placeholder="Your email ..."></Input>

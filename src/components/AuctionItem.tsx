@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button } from "antd";
+import { Link } from 'react-router-dom';
+import { DETAIL_PRODUCT } from '@/constants/Routes';
 
 interface AuctionItemType {
   auctionName: string;
@@ -22,7 +24,11 @@ const AuctionItem: React.FC<AuctionItemType> = ({ auctionName, startTime, endTim
         <p className="text-gray-600 md:text-sm sm:text-xs">Start time: <b>{startTime}</b></p>
         <p className="text-gray-600 md:text-sm sm:tex -xs">End time: <b>{endTime}</b></p>
         <p className="text-gray-600 md:text-sm sm:text-xs">Start bid: <b>{startbid.toLocaleString()} USD</b></p>
-        <Button className="bg-mainBgColor hover:bg-mainBgHoverColor text-white mt-4">Register</Button>
+        <Button className="bg-mainBgColor hover:bg-mainBgHoverColor text-white mt-4">
+          <Link to={`/${DETAIL_PRODUCT}`} className="inline-flex items-center gap-2 text-md font-semibold text-[#B41712] group">
+                  Register
+          </Link>
+        </Button>
       </div>
     </div>
   );

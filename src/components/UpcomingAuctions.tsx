@@ -3,6 +3,7 @@ import AuctionItem from "./AuctionItem";
 import { PiArrowRightFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import { productImage, coinImage, coatImage, coat01 } from "@/assets/images";
+import { DETAIL_PRODUCT } from "@/constants/Routes";
 
 
 function UpcomingAuctions() {
@@ -106,7 +107,7 @@ function UpcomingAuctions() {
         ))}
       </div>
      <div className="mt-12 text-center">
-                <Link to={""} className="inline-flex items-center gap-2 text-lg font-bold text-[#B41712] group">
+                <Link to={`/${DETAIL_PRODUCT}`} className="inline-flex items-center gap-2 text-lg font-bold text-[#B41712] group">
                     <span>View All</span>
                     <PiArrowRightFill className="transition-transform group-hover:translate-x-1" />
                 </Link >
